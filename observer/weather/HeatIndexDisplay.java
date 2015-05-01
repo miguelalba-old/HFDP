@@ -3,10 +3,8 @@ package observer.weather;
 public class HeatIndexDisplay implements Observer, DisplayElement {
 
 	private float heatIndex;
-	private Subject weatherData;
 
 	public HeatIndexDisplay(Subject weatherData) {
-		this.weatherData = weatherData;
 		weatherData.registerObserver(this);
 	}
 
